@@ -211,7 +211,7 @@ jobs: # credits for workflow from https://github.com/messense/crfs-rs/blob/main/
     runs-on: ubuntu-latest
     needs: [ macos, windows, linux, linux-cross, musllinux, musllinux-cross ]
     steps:
-      - uses: actions/download-artifact@v3 # download all artifacts
+      - uses: actions/download-artifact@v4.1.7 # download all artifacts
       - uses: actions/setup-python@v4
         with:
           python-version: 3.9
